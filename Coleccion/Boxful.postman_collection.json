@@ -1,0 +1,310 @@
+{
+	"info": {
+		"_postman_id": "2251cc37-b3e5-4244-a8ad-4121289ccafd",
+		"name": "Boxful",
+		"description": "La siguiente documentación explica los diferentes endpoints de cada seccion y el uso y ejemplos para poderlos utilizar.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26132804",
+		"_collection_link": "https://red-meteor-672247.postman.co/workspace/Team-Workspace~8965810c-a7f7-4aff-8aca-5c50acb34e95/collection/26132804-2251cc37-b3e5-4244-a8ad-4121289ccafd?action=share&source=collection_link&creator=26132804"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"ralvarado12\",\r\n    \"email\": \"alvarado@gmail.com12\",\r\n    \"password\": \"123\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"register"
+					]
+				},
+				"description": "Endpoint encargado de realizar el registro de un nuevo usuario en nuestra BD, devolviendo un token y mensaje si el usuario ha sido creado correctamente o si hay credenciales erroneas."
+			},
+			"response": [
+				{
+					"name": "Register",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"ralvarado12\",\r\n    \"email\": \"alvarado@gmail.com12\",\r\n    \"password\": \"123\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/users/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"register"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "265"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"109-hTS3lyrV+2uC8lAOwb6RDfSkuwo\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 17 Jan 2025 04:32:27 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFsdmFyYWRvQGdtYWlsLmNvbTEyIiwic3ViIjoiNjc4OWRkNWExNDhiNWQ5OWMwNmQ1NWFmIiwiaWF0IjoxNzM3MDg4MzQ3LCJleHAiOjE3MzcxNzQ3NDd9.EgbQcWfmiSuwlZPZiqiBEvLRKN0LwyrL_IjET2eQtDo\",\n    \"message\": \"User logged in successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"alvarado@gmail.com\",\r\n    \"password\": \"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"login"
+					]
+				},
+				"description": "Endpoint para realizar el inicio de sesion, solo debemos de ingresar el correo registrado y la contrasena. Esto devuelve un token."
+			},
+			"response": [
+				{
+					"name": "Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"alvarado@gmail.com\",\r\n    \"password\": \"123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/users/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "280"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"118-q43Be3v4LARdf3QWsA/XxZmcj/c\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 18 Jan 2025 02:49:45 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"Login successful\",\n    \"data\": {\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFsdmFyYWRvQGdtYWlsLmNvbSIsInN1YiI6IjY3OGIwZmE2MWM5MjA2NmI1MDRiNmI5YiIsImlhdCI6MTczNzE2ODU4NSwiZXhwIjoxNzM3MjU0OTg1fQ.KinAhU77aQL_m4CYeyQhwFpdk1r8Pys4Wx1HBAyfMCQ\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "New Order",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFsdmFyYWRvQGdtYWlsLmNvbSIsInN1YiI6IjY3OGIwZmE2MWM5MjA2NmI1MDRiNmI5",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"pickupAddress\": \"789 Pine Avenue, Office 301\",\r\n  \"scheduledDate\": \"2025-01-22T10:00:00.000Z\",\r\n  \"firstName\": \"Jane\",\r\n  \"lastName\": \"Smith\",\r\n  \"email\": \"jane.smith@example.com\",\r\n  \"phone\": \"9876543210\",\r\n  \"recipientAddress\": \"123 Oak Drive, Floor 2\",\r\n  \"department\": \"Customer Service\",\r\n  \"municipality\": \"Greenwood\",\r\n  \"referencePoint\": \"Opposite the supermarket\",\r\n  \"instructions\": \"Call before delivering the package.\",\r\n  \"packages\": [\r\n    {\r\n      \"length\": 30,\r\n      \"height\": 20,\r\n      \"width\": 15,\r\n      \"weight\": 8,\r\n      \"content\": \"Clothing\"\r\n    },\r\n    {\r\n      \"length\": 40,\r\n      \"height\": 35,\r\n      \"width\": 25,\r\n      \"weight\": 12,\r\n      \"content\": \"Household Items\"\r\n    }\r\n  ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/orders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"orders"
+					]
+				},
+				"description": "Con este endpoint creamos la orden y los paquetes asociados a la orden, para poder usar este endpoint debemos de pasarle un token valido."
+			},
+			"response": [
+				{
+					"name": "New Order",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"pickupAddress\": \"210 Birchwood Drive, Office 102\",\r\n  \"scheduledDate\": \"2025-02-02T11:30:00.000Z\",\r\n  \"firstName\": \"David\",\r\n  \"lastName\": \"Martinez\",\r\n  \"email\": \"david.martinez@example.com\",\r\n  \"phone\": \"6547891230\",\r\n  \"recipientAddress\": \"987 Willow Street, Apartment 6A\",\r\n  \"department\": \"Operations\",\r\n  \"municipality\": \"Hilltop\",\r\n  \"referencePoint\": \"Across from the bakery\",\r\n  \"instructions\": \"Leave the package with the building concierge if no one is home.\",\r\n  \"packages\": [\r\n    {\r\n      \"length\": 18,\r\n      \"height\": 12,\r\n      \"width\": 10,\r\n      \"weight\": 6,\r\n      \"content\": \"Documents\"\r\n    },\r\n    {\r\n      \"length\": 28,\r\n      \"height\": 22,\r\n      \"width\": 14,\r\n      \"weight\": 9,\r\n      \"content\": \"Office Equipment\"\r\n    }\r\n  ]\r\n}\r\n\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/orders",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"orders"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "675"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2a3-fjFpO6GIEbG+sMT828P8ACAzdEw\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 18 Jan 2025 03:16:10 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"Order created successfully\",\n    \"data\": {\n        \"pickupAddress\": \"210 Birchwood Drive, Office 102\",\n        \"scheduledDate\": \"2025-02-02T11:30:00.000Z\",\n        \"firstName\": \"David\",\n        \"lastName\": \"Martinez\",\n        \"email\": \"david.martinez@example.com\",\n        \"phone\": \"6547891230\",\n        \"recipientAddress\": \"987 Willow Street, Apartment 6A\",\n        \"department\": \"Operations\",\n        \"municipality\": \"Hilltop\",\n        \"referencePoint\": \"Across from the bakery\",\n        \"instructions\": \"Leave the package with the building concierge if no one is home.\",\n        \"packages\": [\n            \"678b1cfa7b59c7b2fa4e9cbc\",\n            \"678b1cfa7b59c7b2fa4e9cbd\"\n        ],\n        \"_id\": \"678b1cfa7b59c7b2fa4e9cc0\",\n        \"createdAt\": \"2025-01-18T03:16:10.553Z\",\n        \"updatedAt\": \"2025-01-18T03:16:10.553Z\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		}
+	]
+}
