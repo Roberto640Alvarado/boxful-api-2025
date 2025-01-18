@@ -41,4 +41,26 @@ El proyecto depende de **dos variables de entorno**:
 
 En el repositorio se encuentra una carpeta llamada **Coleccion**, que contiene una **colección de Postman** con ejemplos de uso para los tres endpoints. Esto te permitirá probar las funcionalidades del backend de manera rápida y eficiente.
 
+# Instalación ⚙️
+
+1. 📁**Clona el repositorio:**
+
+   Ejecuta el siguiente comando para clonar el repositorio:
+   ```bash
+   git clone https://github.com/Roberto640Alvarado/boxful-api-2025.git
+
+2. 📁 Navega a la carpeta del proyecto:
+   ```
+   cd boxful-api-2025
+3. 🔑En la raíz del proyecto, crea un archivo llamado .env y debe tener las siguientes variables de entorno:
+```
+"DATABASE_URL=La_URL_de_conexión_a_tu_base_de_datos_MongoDB"
+"JWT_SECRET=La_clave_secreta_para_firmar_los_tokens_JWT"
+```
+4. 📦 Instala las dependencias necesarias:
+   ```
+   npm install
+5. 🚀 Ejecuta el proyecto:
+   ```
+   npm run start
 
