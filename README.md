@@ -54,8 +54,8 @@ En el repositorio se encuentra una carpeta llamada **Coleccion**, que contiene u
    cd boxful-api-2025
 3. 🔑En la raíz del proyecto, crea un archivo llamado .env y debe tener las siguientes variables de entorno:
 ```
-"DATABASE_URL=La_URL_de_conexión_a_tu_base_de_datos_MongoDB"
-"JWT_SECRET=La_clave_secreta_para_firmar_los_tokens_JWT"
+DATABASE_URL="La_URL_de_conexión_a_tu_base_de_datos_MongoDB"
+JWT_SECRET="La_clave_secreta_para_firmar_los_tokens_JWT"
 ```
 4. 📦 Instala las dependencias necesarias:
    ```
