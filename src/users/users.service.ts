@@ -7,8 +7,7 @@ import * as bcrypt from 'bcrypt';
 import { JwtService } from '@nestjs/jwt';
 
 type Tokens = {
-  token: string,
-  message: string
+  token: string
 }
 
 @Injectable()
@@ -80,8 +79,7 @@ export class UsersService {
     const token = await this.jwtSvc.signAsync(payload);
 
     return {
-      token,
-      message: 'User logged in successfully',
+      token
     };
   }
 
