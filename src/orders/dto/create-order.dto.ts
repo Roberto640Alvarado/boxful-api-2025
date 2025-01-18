@@ -6,8 +6,8 @@ export class CreateOrderDto {
   @IsString()
   readonly pickupAddress: string;
 
-  @IsDate()
-  readonly scheduledDate: Date;
+  @IsString()
+  readonly scheduledDate: String;
 
   @IsString()
   readonly firstName: string;

@@ -10,7 +10,7 @@ export class Order {
   pickupAddress: string;
 
   @Prop({ required: true })
-  scheduledDate: Date;
+  scheduledDate: String;
 
   @Prop({ required: true })
   firstName: string;
